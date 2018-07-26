@@ -13,10 +13,6 @@ import 'react-dates/initialize';
 
 const store = configureStore;
 
-store.dispatch(addExpense({ description: 'Water bill', amount: 100 }));
-store.dispatch(addExpense({ description: 'Gas bill', amount: 200, createdAt: 1000 }));
-store.dispatch(addExpense({ description: 'Rent', amount: 50, createdAt: 100000}));
-
 const jsx = (
   <Provider store={store}>
       <AppRouter />
